@@ -1,0 +1,7 @@
+#!/usr/bin/env dl
+
+jdk-jdk-${UB_VERSION_HEAD1}-${UB_VERSION_TAIL1}.tar.gz jdk-jdk-${UB_VERSION_HEAD1}-${UB_VERSION_TAIL1}/
+	https://github.com/openjdk/jdk/archive/
+
+openjdk-15.0.1_linux-x64_bin.tar.gz	jdk-15.0.1/ :bootjdk
+    https://download.java.net/java/GA/jdk15.0.1/51f4f36ad4ef43e39d0dfdbaf6549e32/9/GPL/openjdk-15.0.1_linux-x64_bin.tar.gz
