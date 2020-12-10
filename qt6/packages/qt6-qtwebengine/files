@@ -1,0 +1,8 @@
+	/usr/lib/qt6/bin/qwebengine_convert_dict
+	/usr/lib/qt6/libexec/QtWebEngineProcess
+	/usr/lib/qt6/lib/libQt6WebEngine*.so.*
+	/usr/lib/qt6/plugins/webview
+	/usr/lib/qt6/qml/QtWebEngine
+	/usr/lib/qt6/resources/qtwebengine_*.pak
+	/usr/lib/qt6/translations/qtwebengine_locales
+	/usr/lib/qt6/translations/qtwebengine_*.qm

@@ -1,0 +1,9 @@
+@	/usr/lib/pkgconfig/Qt6Designer.pc
+	/usr/lib/qt6/include/QtDesigner
+	/usr/lib/qt6/include/QtDesignerComponents
+	/usr/lib/qt6/lib/cmake/Qt6Designer
+	/usr/lib/qt6/lib/libQt6DesignerComponents.prl
+@	/usr/lib/qt6/lib/libQt6DesignerComponents.so
+	/usr/lib/qt6/lib/libQt6Designer.prl
+@	/usr/lib/qt6/lib/libQt6Designer.so
+	/usr/lib/qt6/lib/pkgconfig/Qt6Designer.pc

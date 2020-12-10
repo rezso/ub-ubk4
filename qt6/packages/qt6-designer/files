@@ -1,0 +1,11 @@
+@	/usr/bin/designer-qt6
+	/usr/lib/qt6/bin/designer
+	/usr/lib/qt6/bin/designer.debug
+	/usr/lib/qt6/lib/libQt6DesignerComponents.so.*
+@	/usr/lib/qt6/lib/libQt6DesignerComponents.so.*
+	/usr/lib/qt6/lib/libQt6Designer.so.*
+@	/usr/lib/qt6/lib/libQt6Designer.so.*
+	/usr/lib/qt6/plugins/designer
+	/usr/lib/qt6/translations/designer_*.qm
+	/usr/share/applications/qt6-designer.desktop
+	/usr/share/pixmaps/designer-qt6.png

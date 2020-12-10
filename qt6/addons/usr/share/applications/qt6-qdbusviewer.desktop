@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Qt6 QDbusViewer
+GenericName=D-Bus Debugger
+Comment=Qt6 D-Bus Debugger
+Comment[hu]=Qt6 D-Bus Debugger
+Exec=qdbusviewer-qt6
+Icon=qdbusviewer-qt6
+Categories=Qt;Development;Debugger;
+Name[hu_HU]=qt6-qdbusviewer.desktop
