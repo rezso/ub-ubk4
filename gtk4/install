@@ -1,0 +1,12 @@
+#!/bin/sh -eux
+
+ub_install
+
+ln -s gtk4.pc $UB_INSTALLDIR/usr/lib/pkgconfig/gtk+-3.0.pc
+ln -s gtk4.pc $UB_INSTALLDIR/usr/lib/pkgconfig/gdk-3.0.pc
+
+ln -s gtk4-unix-print.pc $UB_INSTALLDIR/usr/lib/pkgconfig/gtk+-unix-print-3.0.pc
+ln -s gtk4-wayland.pc $UB_INSTALLDIR/usr/lib/pkgconfig/gdk-wayland-3.0.pc
+ln -s gtk4-wayland.pc $UB_INSTALLDIR/usr/lib/pkgconfig/gtk+-wayland-3.0.pc
+ln -s gtk4-x11.pc $UB_INSTALLDIR/usr/lib/pkgconfig/gdk-x11-3.0.pc
+ln -s gtk4-x11.pc $UB_INSTALLDIR/usr/lib/pkgconfig/gtk+-x11-3.0.pc
