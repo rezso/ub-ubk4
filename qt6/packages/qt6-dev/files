@@ -2,17 +2,49 @@
 @	/usr/bin/qmake-qt6
 @	/usr/bin/rcc-qt6
 @	/usr/bin/uic-qt6
-@	/usr/lib/pkgconfig/*
-	/usr/lib/qt6/bin/moc
-	/usr/lib/qt6/bin/moc.debug
+	/usr/lib/qt6/bin/androiddeployqt
+	/usr/lib/qt6/bin/androidtestrunner
+	/usr/lib/qt6/bin/balsam
+	/usr/lib/qt6/bin/meshdebug
+	/usr/lib/qt6/bin/pixeltool
+	/usr/lib/qt6/bin/qdbuscpp2xml
+	/usr/lib/qt6/bin/qdbusxml2cpp
+	/usr/lib/qt6/bin/qdistancefieldgenerator
+	/usr/lib/qt6/bin/qdoc
+	/usr/lib/qt6/bin/qhelpgenerator
 	/usr/lib/qt6/bin/qmake
-	/usr/lib/qt6/bin/rcc
-	/usr/lib/qt6/bin/uic
-	/usr/lib/qt6/bin/uic.debug
+	/usr/lib/qt6/bin/qmake6
+	/usr/lib/qt6/bin/qml
+	/usr/lib/qt6/bin/qmlcachegen
+	/usr/lib/qt6/bin/qmleasing
+	/usr/lib/qt6/bin/qmlformat
+	/usr/lib/qt6/bin/qmlimportscanner
+	/usr/lib/qt6/bin/qmllint
+	/usr/lib/qt6/bin/qmlplugindump
+	/usr/lib/qt6/bin/qmlpreview
+	/usr/lib/qt6/bin/qmlprofiler
+	/usr/lib/qt6/bin/qmlscene
+	/usr/lib/qt6/bin/qmltestrunner
+	/usr/lib/qt6/bin/qmltime
+	/usr/lib/qt6/bin/qmltyperegistrar
+	/usr/lib/qt6/bin/qsb
+	/usr/lib/qt6/bin/qscxmlc
+	/usr/lib/qt6/bin/qtattributionsscanner
+	/usr/lib/qt6/bin/qt-cmake
+	/usr/lib/qt6/bin/qt-cmake-private
+	/usr/lib/qt6/bin/qt-cmake-private-install.cmake
+	/usr/lib/qt6/bin/qt-cmake-standalone-test
+	/usr/lib/qt6/bin/qt-configure-module
+	/usr/lib/qt6/bin/qtdiag
+	/usr/lib/qt6/bin/qtdiag6
+	/usr/lib/qt6/bin/qtpaths
+	/usr/lib/qt6/bin/qtplugininfo
+	/usr/lib/qt6/bin/qtwaylandscanner
+	/usr/lib/qt6/bin/shadergen
 	/usr/lib/qt6/include
 	/usr/lib/qt6/lib/*.a
 	/usr/lib/qt6/lib/cmake
-	/usr/lib/qt6/lib/pkgconfig/*
+	/usr/lib/qt6/libexec
 	/usr/lib/qt6/lib/*.prl
 @	/usr/lib/qt6/lib/*.so
 	/usr/lib/qt6/mkspecs

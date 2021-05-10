@@ -31,8 +31,6 @@ ruby-dev
 sqlite-dev
 systemd-dev
 tslib-dev
-vulkan-headers
-vulkan-loader
 wayland-dev
 xcb-util-cursor-dev
 xcb-util-dev

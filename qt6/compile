@@ -1,60 +1,60 @@
 #!/bin/sh -eux
 
+# https://doc.qt.io/qt-6/whatsnew60.html#removed-modules-in-qt-6-0
+
 cd $UB_OBJECTDIR
 
 export LD_LIBRARY_PATH="$(pwd)"/lib
 
-$UB_COMPILEDIR/configure \
-	-platform linux-g++-64 \
-	-prefix /usr/lib/qt6 \
-	-sysconfdir /etc/xdg \
+cmake $UB_COMPILEDIR \
+    -G Ninja \
+	-DQT_QMAKE_TARGET_MKSPEC=linux-g++-64 \
+	-DCMAKE_INSTALL_PREFIX=/usr/lib/qt6 \
+	-DINSTALL_SYSCONFDIR=/etc/xdg \
 	\
-	-cmake              \
-	-release            \
-	-opensource         \
-	-confirm-license	\
-	-shared             \
-	-journald			\
-	-ccache             \
-	-no-pch             \
-	-qml-debug			\
-	-no-use-gold-linker \
-	-reduce-relocations \
-	-no-rpath           \
+	-DCMAKE_BUILD_TYPE=Release \
+	-DBUILD_SHARED_LIBS=ON \
+	-DINPUT_journald=yes \
+	-DQT_USE_CCACHE=ON \
+	-DBUILD_WITH_PCH=OFF \
+	-DINPUT_qml_debug=yes \
+	-DINPUT_use_gold_linker_alias=no \
+    -DINPUT_reduce_relocations=yes \
+    -DINPUT_rpath=no \
 	\
-	-nomake examples    \
-	-nomake tests		\
+	-DQT_BUILD_EXAMPLES=FALSE \
+	-DQT_BUILD_TESTS=FALSE \
 	\
-	-accessibility      \
+	-DINPUT_accessibility=yes \
 	\
-	-plugin-sql-sqlite  \
+	-DINPUT_sql_sqlite=yes \
 	\
-	-system-freetype	\
-	-system-harfbuzz	\
-	-system-libjpeg     \
-	-system-libpng      \
-	-system-pcre		\
-	-system-sqlite		\
-	-system-zlib        \
+	-DINPUT_freetype=system \
+	-DINPUT_harfbuzz=system \
+	-DINPUT_libjpeg=system \
+	-DINPUT_libpng=system \
+	-DINPUT_pcre=system \
+	-DINPUT_system_sqlite=yes \
+	-DINPUT_system_zlib=yes \
 	\
-	-dbus-linked        \
-	-openssl-linked     \
-	-ssl               \
+	-DINPUT_dbus=linked \
+	-DINPUT_openssl=linked \
+	-DINPUT_ssl=yes \
 	\
-	-cups               \
-	-glib               \
-	-gtk				\
-	-opengl             \
-	-no-linuxfb         \
-	-no-eglfs           \
-	-no-kms             \
-	-no-libproxy		\
+    -DINPUT_cups=yes \
+    -DINPUT_glib=yes \
+    -DINPUT_gtk3=yes \
+    -DINPUT_opengl=yes \
+    -DINPUT_linuxfb=no \
+    -DINPUT_eglfs=yes \
+    -DINPUT_kms=no \
+    -DINPUT_libproxy=no \
 	\
-	-fontconfig         \
-	-evdev				\
-	-mtdev				\
-	-libinput			\
-	-tslib              \
+    -DINPUT_fontconfig=yes \
+    -DINPUT_evdev=yes \
+    -DINPUT_mtdev=yes \
+    -DINPUT_libinput=yes \
+    -DINPUT_tslib=yes \
 #	\
 #	-system-webengine-icu \
 #	-system-ffmpeg

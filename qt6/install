@@ -25,7 +25,7 @@ install -Dm644 $UB_COMPILEDIR/qttools/src/linguist/linguist/images/icons/linguis
 install -Dm644 $UB_COMPILEDIR/qttools/src/qdbus/qdbusviewer/images/qdbusviewer-128.png \
                   "$UB_INSTALLDIR"/usr/share/pixmaps/qdbusviewer-qt6.png
 
-ln -s ../lib/qt6/bin/moc "$UB_INSTALLDIR"/usr/bin/moc-qt6
 ln -s ../lib/qt6/bin/qmake "$UB_INSTALLDIR"/usr/bin/qmake-qt6
-ln -s ../lib/qt6/bin/rcc "$UB_INSTALLDIR"/usr/bin/rcc-qt6
-ln -s ../lib/qt6/bin/uic "$UB_INSTALLDIR"/usr/bin/uicqt6
+ln -s ../lib/qt6/libexec/moc "$UB_INSTALLDIR"/usr/bin/moc-qt6
+ln -s ../lib/qt6/libexec/rcc "$UB_INSTALLDIR"/usr/bin/rcc-qt6
+ln -s ../lib/qt6/libexec/uic "$UB_INSTALLDIR"/usr/bin/uic-qt6
