@@ -29,3 +29,5 @@ ln -s ../lib/qt6/bin/qmake "$UB_INSTALLDIR"/usr/bin/qmake-qt6
 ln -s ../lib/qt6/libexec/moc "$UB_INSTALLDIR"/usr/bin/moc-qt6
 ln -s ../lib/qt6/libexec/rcc "$UB_INSTALLDIR"/usr/bin/rcc-qt6
 ln -s ../lib/qt6/libexec/uic "$UB_INSTALLDIR"/usr/bin/uic-qt6
+
+rm -Rf "$UB_INSTALLDIR"/usr/lib/qt6/lib/cmake/Qt6/{macos,ios,QtBuildInternals}
